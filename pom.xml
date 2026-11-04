@@ -36,7 +36,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter Thymeleaf (для работы с шаблонами) -->
+        <!-- Spring Boot Starter Thymeleaf (for templates) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -50,10 +50,10 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version> <!-- Убедитесь, что используете корректную версию -->
+            <version>8.0.33</version> <!-- Make sure you use the correct version -->
             <scope>runtime</scope>
         </dependency>
-        <!-- Lombok (опционально) -->
+        <!-- Lombok (optional) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -65,7 +65,7 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- Тестирование -->
+        <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

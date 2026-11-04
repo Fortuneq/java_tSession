@@ -35,7 +35,7 @@ public class Session {
     @Setter
     private int tickets;
 
-    // Конструктор по умолчанию
+    // Default constructor
     protected Session() {
     }
 }

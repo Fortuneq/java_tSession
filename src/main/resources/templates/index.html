@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <!-- Сортировка по дате спектакля -->
+    <!-- Sort by performance date -->
     <div class="mb-3">
         <a href="/sortByDate" class="btn btn-secondary">Сортировать по дате</a>
     </div>
@@ -79,14 +79,14 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        // Счетчик спектаклей
+        // Performance counter
         document.addEventListener("DOMContentLoaded", function () {
-            // Подсчет строк в таблице
+            // Count table rows
             document.getElementById("sessionCount").textContent = document.querySelectorAll("tbody tr").length;
         });
     });
 
-    // Построение графика
+    // Build the chart
     let table = document.getElementById('1');
     let tBody = table.querySelector('tbody');
     let ths = tBody.querySelectorAll('th');
@@ -95,7 +95,7 @@
     let yValues = new Array(12).fill(0);
 
     for (let i = 0; i < ths.length; i+=1) {
-        let month = ths[i].innerText.slice(5, 7); // Извлечение месяца из даты спектакля
+        let month = ths[i].innerText.slice(5, 7); // Extract the month from the performance date
         let index = parseInt(month, 10) - 1;
         if (index >= 0 && index < 12) {
             yValues[index] += 1;

@@ -21,7 +21,7 @@ public class SessionController {
     @RequestMapping("/")
     public String viewHomePage(Model model, @Param("keyword") String keyword){
         List<Session> listSessions = service.listAll(keyword);
-        model.addAttribute("listSessions", listSessions);  // Правильное имя атрибута
+        model.addAttribute("listSessions", listSessions);  // Correct attribute name
         model.addAttribute("keyword", keyword);
         return "index";
     }
@@ -48,7 +48,7 @@ public class SessionController {
         return mav;
     }
 
-    // Метод для сортировки по дате
+    // Method for sorting by date
     @RequestMapping("/sortByDate")
     public String sortByDate(Model model, @Param("keyword") String keyword) {
         List<Session> sortedSessions = service.listAll(keyword)
